@@ -1,0 +1,5 @@
+package hsql
+
+func A() {
+
+}
