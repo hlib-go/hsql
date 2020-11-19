@@ -1,4 +1,4 @@
-package hsql
+package test
 
 import (
 	"database/sql"
