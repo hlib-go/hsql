@@ -11,7 +11,9 @@ func RowsConvertSliceMap(rows *sql.Rows) (list []map[string]interface{}, err err
 	defer func() {
 		if rows != nil {
 			err = rows.Close()
-			fmt.Println(err)
+			if err != nil {
+				fmt.Println("Error:", err.Error())
+			}
 		}
 	}()
 
